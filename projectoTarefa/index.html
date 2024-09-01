@@ -8,12 +8,31 @@
 </head>
 <body>
     <div id=tarefa-container">
-        <div id="tarefa-">
+        <div id="tarefa-header">
+            <h2>Adicione sua próxima tarefa:</h2>
+            <form action="#" id="add-tarefa-form">
+                <input type="text" id="tarefa-title" placeholder="O que está pensando em fazer? " />
+                <button id="add-btn" type="submit" >
+                    <ion-icon name="add-outline"></ion-icon>
+                </button>
+            </form>
+        </div>
+        <div id="tarefa-lista-container">
+            <h2>Suas tarefas:</h2>
+            <ul id="tarefa-lista">
+                <li class="tarefa-box">
+                    <span class="tarefa-title">teste1</span>
+                    <ion-icon class="done-btn" name="checkmark-outline"></ion-icon>
+                    <ion-icon class="remove-btn" name="close-outline"></ion-icon>
+                </li>
+
+            </ul>
 
         </div>
 
     </div>
- <script src="js/script.js"></script> 
- <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+<script src="js/script.js"></script> 
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>
